@@ -1,0 +1,10 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/VIVADO_PROJECT/project_HW4/project_HW4.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+D:/VIVADO_PROJECT/project_HW4/project_HW4.srcs/sim_1/new/tb_clk_div.v,1639559504,verilog,,,,tb_clk_div,,,,,,,,
+D:/VIVADO_PROJECT/project_HW4/project_HW4.srcs/sources_1/new/clk_3div.v,1639463550,verilog,,D:/VIVADO_PROJECT/project_HW4/project_HW4.srcs/sources_1/new/clk_4div2.v,,clk_3div,,,,,,,,
+D:/VIVADO_PROJECT/project_HW4/project_HW4.srcs/sources_1/new/clk_4div2.v,1639463675,verilog,,D:/VIVADO_PROJECT/project_HW4/project_HW4.srcs/sim_1/new/tb_clk_div.v,,clk_4div2,,,,,,,,
+D:/VIVADO_PROJECT/project_HW4/project_HW4.srcs/sources_1/new/clk_Ndiv.v,1639559590,verilog,,D:/VIVADO_PROJECT/project_HW4/project_HW4.srcs/sim_1/new/tb_clk_div.v,,clk_Ndiv,,,,,,,,
+D:/VIVADO_PROJECT/project_HW4/project_HW4.srcs/sources_1/new/divide_by_2.v,1639557177,verilog,,D:/VIVADO_PROJECT/project_HW4/project_HW4.srcs/sim_1/new/tb_clk_div.v,,divide_by_2,,,,,,,,

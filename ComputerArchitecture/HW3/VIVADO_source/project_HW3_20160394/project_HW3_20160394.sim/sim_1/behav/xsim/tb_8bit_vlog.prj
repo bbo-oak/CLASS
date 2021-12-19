@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_HW3_20160394.srcs/sources_1/new/adder_subtractor_8bit.v" \
+"../../../../project_HW3_20160394.srcs/sim_1/new/tb_8bit.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

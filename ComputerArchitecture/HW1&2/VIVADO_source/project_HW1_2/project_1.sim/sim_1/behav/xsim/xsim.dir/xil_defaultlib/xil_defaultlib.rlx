@@ -1,0 +1,10 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/VIVADO_PROJECT/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+D:/VIVADO_PROJECT/project_1/project_1.srcs/sim_1/new/tb_fa.v,1636805424,verilog,,,,tb_fa,,,,,,,,
+D:/VIVADO_PROJECT/project_1/project_1.srcs/sources_1/new/fa.v,1637164948,verilog,,D:/VIVADO_PROJECT/project_1/project_1.srcs/sources_1/new/fa2.v,,fa,,,,,,,,
+D:/VIVADO_PROJECT/project_1/project_1.srcs/sources_1/new/fa2.v,1636803438,verilog,,D:/VIVADO_PROJECT/project_1/project_1.srcs/sources_1/new/fa3.v,,fa2,,,,,,,,
+D:/VIVADO_PROJECT/project_1/project_1.srcs/sources_1/new/fa3.v,1636810848,verilog,,D:/VIVADO_PROJECT/project_1/project_1.srcs/sources_1/new/ha.v,,fa3,,,,,,,,
+D:/VIVADO_PROJECT/project_1/project_1.srcs/sources_1/new/ha.v,1636810664,verilog,,D:/VIVADO_PROJECT/project_1/project_1.srcs/sim_1/new/tb_fa.v,,ha,,,,,,,,

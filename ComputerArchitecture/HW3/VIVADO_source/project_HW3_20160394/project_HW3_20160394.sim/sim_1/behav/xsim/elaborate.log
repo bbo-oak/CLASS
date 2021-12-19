@@ -1,0 +1,7 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 22a3358e8c1c44d495058ca43cf1a486 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_4bit_behav xil_defaultlib.tb_4bit xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <seletor_8bit> not found while processing module instance <S8> [D:/VIVADO_PROJECT/project_HW3_20160394/project_HW3_20160394.srcs/sim_1/new/tb_4bit.v:30]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

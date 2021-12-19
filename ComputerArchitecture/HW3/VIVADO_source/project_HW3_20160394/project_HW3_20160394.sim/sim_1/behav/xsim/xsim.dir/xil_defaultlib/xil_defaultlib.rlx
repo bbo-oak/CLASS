@@ -1,0 +1,11 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/VIVADO_PROJECT/project_HW3_20160394/project_HW3_20160394.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+D:/VIVADO_PROJECT/project_HW3_20160394/project_HW3_20160394.srcs/sim_1/new/tb_4bit.v,1638282564,verilog,,,,tb_4bit,,,,,,,,
+D:/VIVADO_PROJECT/project_HW3_20160394/project_HW3_20160394.srcs/sim_1/new/tb_8bit.v,1638278678,verilog,,,,tb_8bit,,,,,,,,
+D:/VIVADO_PROJECT/project_HW3_20160394/project_HW3_20160394.srcs/sources_1/new/adder_subtractor_4bit.v,1638273801,verilog,,D:/VIVADO_PROJECT/project_HW3_20160394/project_HW3_20160394.srcs/sources_1/new/fa.v,,adder_subtractor_4bit,,,,,,,,
+D:/VIVADO_PROJECT/project_HW3_20160394/project_HW3_20160394.srcs/sources_1/new/adder_subtractor_8bit.v,1638278567,verilog,,D:/VIVADO_PROJECT/project_HW3_20160394/project_HW3_20160394.srcs/sim_1/new/tb_8bit.v,,adder_subtractor_8bit,,,,,,,,
+D:/VIVADO_PROJECT/project_HW3_20160394/project_HW3_20160394.srcs/sources_1/new/fa.v,1638274386,verilog,,D:/VIVADO_PROJECT/project_HW3_20160394/project_HW3_20160394.srcs/sources_1/new/ha.v,,fa,,,,,,,,
+D:/VIVADO_PROJECT/project_HW3_20160394/project_HW3_20160394.srcs/sources_1/new/ha.v,1638183868,verilog,,D:/VIVADO_PROJECT/project_HW3_20160394/project_HW3_20160394.srcs/sim_1/new/tb_4bit.v,,ha,,,,,,,,
