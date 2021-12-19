@@ -1,0 +1,2 @@
+* linguist-vendored
+*.Verilog linguist-vendored=false
