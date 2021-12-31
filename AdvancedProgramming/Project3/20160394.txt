@@ -1,0 +1,101 @@
+1. 문제정의
+① Pet 정보를 갖는 Pet클래스.
+name, owner, rate, nights -> 필수 멤버 변수
+해당 Pet의 총 숙박비를 저장하는 int형 변수가 필요함.
+해당 Pet의 숙박비를 owner가 지불했는지 여부를 판단하는 bool형 변수가 필요함.
+
+각각 멤버 변수 접근을 위한 get, set이 필요함.
+시간이 지남에 따라 Pet의 남은 숙박일수를 계산하는 함수가 필요함.
+
+showpet을 위해 << 연산자 오버로딩이 필요함.
+
+② Owner 정보를 갖는 Owner 클래스.
+name, balance -> 필수 멤버 변수
+해당 Owner의 총 Pet수를 표현하는 int형 변수가 필요함.
+
+각각 멤버 변수 접근을 위한 get, set이 필요함.
+Pet의 숙박비를 계산하는 함수가 필요함.
+
+showowner를 위해 << 연산자 오버로딩이 필요함.
+
+③ Pet과 Owner를 관리하는 Hotel 클래스.
+pet과 owner들을 저장하는 변수가 필요함.
+Hotel의 총 수입을 표현하는 int형 변수가 필요함.
+Hotel이 며칠이 지났는지 표현하는 int형 변수가 필요함.
+
+새로운 pet과 owner를 저장하는 함수가 필요함.
+pass로 인해 시간이 지남에 따라 변화를 나타내는 함수가 필요함.
+showpet과 showowner가 필요함.
+getbalance가 필요함.
+
+④ 명령어를 받는 main함수
+txt파일을 읽어와 명령어를 구분한 후 그에 따른 파라미터를 입력받는 것이 필요함.
+
+⑤ pet과 owner들을 저장하는 배열.
+Hotel에서 pet과 owner들을 저장하는 방식을 배열로 구현한다.
+각 pet과 owner 객체를 생성한 후 그 포인터를 배열에 저장한다.
+
+⑥ showpet과 showowner
+오버로딩된 <<를 이용해 Hotel에 있는 pet과 owner 정보를 출력한다.
+
+
+2. 프로그램 설계
+① Pet 정보를 갖는 Pet클래스.
+name, owner, rate, nights -> 필수 멤버 변수
+해당 Pet의 총 숙박비를 저장하는 totalfee
+해당 Pet의 숙박비를 owner가 지불했는지 여부를 판단하는 is_paid
+
+시간이 지남에 따라 Pet의 남은 숙박일수를 계산하는 함수 nights_minus -> 파라미터 n만큼 nights 변수를 감소시킨다. 0이하의 정수는 모두 0으로 표현한다.
+
+Hotel에서 Pet클래스 복사가 필요하여 =연산자 오버로딩.
+showpet을 위한 << 연산자 오버로딩.
+
+② Owner 정보를 갖는 Owner 클래스.
+name, balance -> 필수 멤버 변수
+해당 Owner의 총 Pet수를 표현하는 num_pet.
+해당 Owner가 보유한 Pet이 0일 때, 신규 등록자인지 아닌지 판단하는 bool형 legacy 변수. -> p#3 P#3 에서 showowners 명령어의 요구사항을 일부 수정으로 부분 삭제함.
+
+Pet의 숙박비를 계산하는 함수 balance_minus -> 파라미터 n만큼 balance 변수를 감소시킨다.
+Pet의 checkin, checkout에 따른 num_pet의 변화를 관리하는 함수 set_num_pet -> 파라미터 n만큼 num_pet 변수에 더한다.
+
+showowner를 위해 << 연산자 오버로딩.
+
+③ Pet과 Owner를 관리하는 Hotel 클래스.
+pet과 owner들을 저장하는 list_pet과 list_owner 배열.
+
+Hotel의 총 수입을 표현하는 balance.
+Hotel이 며칠이 지났는지 표현하는 dayspassed.
+현재까지 등록된 모든 Pet, Owner의 수를 표현하는 point_list_pet, point_list_owner.
+
+새로운 pet과 owner를 저장하는 insert_Pet, insert_Owner. 
+-> insert_Owner의 경우 중복된 이름이 있는지 확인하고 없다면 새로운 객체를 만들고 그 포인터를 list_owner에 저장한다.
+insert_Pet의 경우 중복된 이름이 있는지 확인하고 없다면 새로운 객체를 만들고 그 포인터를 list_owner에 저장한다.
+또한, 자신의 owner를 찾아 owner의 num_pet변수를 1만큼 증가시키고, legacy를 false로 바꾼다.
+
+pass로 인해 시간이 지남에 따라 변화를 나타내는 timemachine.
+-> 파라미터 d만큼 list_Pet에 있는 모든 pet들의 숙박일수를 감소시킨다.
+checkout이 필요한 Pet이 있다면 그 Pet의 숙박료를 owner가 낼 수 있는지를 검사한다.
+낼 수 있다면 owner의 숙박료를 그 만큼 감소시키고 Hotel의 balance를 그 만큼 증가시킨다. 이후 해당 pet은 delete한다.
+낼 수 없는경우 해당 Pet의 is_paid변수를 false로 바꾼다.
+
+showpet과 showowner -> 각 클래스 헤더에서 정의한 오버로딩된 <<를 사용했다.
+
+getbalance -> 멤버변수들을 출력하는 함수
+
+④ 명령어를 받는 main함수
+fstream을 이용해 txt파일을 읽어온다.
+문장의 첫 글자에 따라 동작을 다르게 한다.
+register -> 뒤에 따라오는 정보에 따라 insert_Owner를 하여 Hotel의 owner배열에 저장한다.
+checkin -> 뒤에 따라오는 정보에 따라 insert_Pet 하여 Hotel의 Pet배열에 저장한다.
+showpets -> Hotel의 showpets함수를 불러온다.
+showowners -> Hotel의 showowners함수를 불러온다.
+getbalance -> Hotel의 getbalance함수를 불러온다.
+pass -> Hotel의 timemachine함수를 불러온다.
+
+
+⑤ pet과 owner들을 저장하는 배열.
+insert_Pet에서 pet객체를 생성하고 배열에 그 포인터를 저장한다.
+insert_Hotel에서 owner객체를 생성하고 배열에 그 포인터를 저장한다.
+
+Pet의 경우 checkout과 동시에 delete한다.
+Hotel의 소멸자에서 배열에 있는 객체들을 delete한다.
